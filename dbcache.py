@@ -132,9 +132,10 @@ def choice(n) :
 	return choice_n
 
 choice_5 = choice(8)
+
 all_runtime = []
 for i in range(2, 10) :
 	df, runtime = cache_analysis(i, choice_5)
 	all_runtime.append(runtime)
 	
-print(all_runtime)
+print('\n', all_runtime)
